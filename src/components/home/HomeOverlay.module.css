@@ -1,2 +1,16 @@
 .home {
+  display: flex;
+  flex-direction: column;
+  color: #101010;
+}
+
+.heading {
+  font-size: 6rem;
+}
+
+.text {
+  margin-top: auto;
+  font-size: 2rem;
+  font-weight: 200;
+  width: 35%;
 }
