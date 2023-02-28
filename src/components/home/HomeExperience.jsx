@@ -6,7 +6,13 @@ import {
   TransformControls,
   useMask,
 } from "@react-three/drei";
+import {
+  RoundedPlaneShape,
+  roundedRectShape,
+} from "../../helpers/RoundPlaneShape";
 import Background from "../Background";
+
+const planeShape = new RoundedPlaneShape();
 
 const HomeExperience = () => {
   const stencil = useMask(1);
@@ -14,9 +20,9 @@ const HomeExperience = () => {
   return (
     <>
       <Background />
-      <TransformControls position={[4, 0, 0.2]}>
+      <TransformControls position={[3.5, -2.5, 0.2]}>
         <Mask colorWrite depthWrite id={1}>
-          <planeGeometry args={[2, 6, 64, 64]} />
+          <shapeGeometry args={[planeShape]} />
           <meshBasicMaterial color={"#101010"} />
         </Mask>
       </TransformControls>
