@@ -22,7 +22,7 @@ const HomeExperience = () => {
       </TransformControls>
 
       <Float>
-        <mesh position={[0, 0, 1]}>
+        <mesh position={[0, 0, 2]}>
           <sphereGeometry />
           <meshNormalMaterial />
         </mesh>

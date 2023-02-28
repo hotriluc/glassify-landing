@@ -1,0 +1,26 @@
+.about {
+  height: 200vh;
+  color: white;
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 60rem;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 4rem;
+}
+
+.heading {
+  font-size: 4rem;
+  display: inline-block;
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 200;
+  width: 75%;
+}

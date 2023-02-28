@@ -1,5 +1,12 @@
-import { Scroll, ScrollControls } from "@react-three/drei";
+import {
+  OrthographicCamera,
+  PerspectiveCamera,
+  Scroll,
+  ScrollControls,
+} from "@react-three/drei";
 import React from "react";
+import AboutExperience from "./about/AboutExperience";
+import AboutOverlay from "./about/AboutOverlay";
 import HomeExperience from "./home/HomeExperience";
 import HomeOverlay from "./home/HomeOverlay";
 
@@ -9,13 +16,14 @@ const Experience = () => {
       <color args={["#101010"]} attach="background" />
       <ambientLight />
 
-      <ScrollControls pages={3}>
+      <ScrollControls pages={4} damping={0.3}>
         <Scroll>
           <HomeExperience />
+          <AboutExperience />
         </Scroll>
         <Scroll html>
           <HomeOverlay />
-          <section style={{ color: "white" }}>about</section>
+          <AboutOverlay />
           <section style={{ color: "white" }}>contact</section>
         </Scroll>
       </ScrollControls>

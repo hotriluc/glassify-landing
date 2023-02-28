@@ -6,7 +6,7 @@ import Experience from "./components/Experience";
 
 function App() {
   return (
-    <Canvas flat>
+    <Canvas flat dpr={[1, 1.5]}>
       <Experience />
     </Canvas>
   );
