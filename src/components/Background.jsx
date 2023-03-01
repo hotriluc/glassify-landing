@@ -13,10 +13,10 @@ const Background = (props) => {
     const colorBlack = new THREE.Color("#101010");
     const colorWhite = new THREE.Color("white");
 
-    material.current.color.lerp(
-      scroll.offset > 0.3 ? colorBlack : colorWhite,
-      0.1
-    );
+    // material.current.color.lerp(
+    //   scroll.offset > 0.3 ? colorBlack : colorWhite,
+    //   0.1
+    // );
 
     // material.current.color.lerpColors(
     //   colorWhite,

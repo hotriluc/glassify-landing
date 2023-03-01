@@ -8,8 +8,13 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: "Roboto Slab", serif;
   color: #101010;
+  font-family: "Roboto Slab", serif;
+}
+
+input,
+textarea {
+  font-family: "Roboto Slab", serif;
 }
 
 html,

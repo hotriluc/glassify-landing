@@ -7,6 +7,8 @@ import {
 import React from "react";
 import AboutExperience from "./about/AboutExperience";
 import AboutOverlay from "./about/AboutOverlay";
+import ContactExperience from "./contact/ContactExperience";
+import ContactOverlay from "./contact/ContactOverlay";
 import HomeExperience from "./home/HomeExperience";
 import HomeOverlay from "./home/HomeOverlay";
 
@@ -20,11 +22,12 @@ const Experience = () => {
         <Scroll>
           <HomeExperience />
           <AboutExperience />
+          <ContactExperience />
         </Scroll>
         <Scroll html>
           <HomeOverlay />
           <AboutOverlay />
-          <section style={{ color: "white" }}>contact</section>
+          <ContactOverlay />
         </Scroll>
       </ScrollControls>
     </>
