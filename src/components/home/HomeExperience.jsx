@@ -6,10 +6,7 @@ import {
   TransformControls,
   useMask,
 } from "@react-three/drei";
-import {
-  RoundedPlaneShape,
-  roundedRectShape,
-} from "../../helpers/RoundPlaneShape";
+import { RoundedPlaneShape } from "../../helpers/RoundPlaneShape";
 import Background from "../Background";
 
 const planeShape = new RoundedPlaneShape();
