@@ -12,7 +12,9 @@ const Experience = () => {
     <>
       <color args={["#101010"]} attach="background" />
       <ambientLight />
-      <Environment preset="city" />
+      <directionalLight />
+
+      {/* <Environment preset="dawn" /> */}
 
       <ScrollControls pages={4} damping={0.3}>
         <Scroll>

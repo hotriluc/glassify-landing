@@ -12,7 +12,8 @@ import { useControls } from "leva";
 import { useRef, useState } from "react";
 import { damp } from "three/src/math/MathUtils";
 import { RoundedPlaneShape } from "../../helpers/RoundPlaneShape";
-import { Bunny } from "../home/Bunny";
+import { Bunny } from "../models/Bunny";
+import Dragon from "../models/Dragon";
 
 const planeShape = new RoundedPlaneShape(0, 0, 2, 5);
 const smallPlaneShape = new RoundedPlaneShape(0, 0, 2, 2);
@@ -76,21 +77,17 @@ const AboutExperience = () => {
         </mesh>
       </Float>
 
-      <group position={[-1.5, -16, 0]}>
-        <mesh position={[-5.5, -1, -1]}>
-          <shapeGeometry args={[planeShape]} />
-          <meshBasicMaterial color={"red"} />
-        </mesh>
+      <group position={[-3, -15, -1]}>
+        <Float>
+          <mesh>
+            <boxGeometry args={[4, 3, 2]} />
+            <MeshTransmissionMaterial {...config} />
 
-        <mesh position={[-3, -2, -1]}>
-          <shapeGeometry args={[planeShape]} />
-          <meshBasicMaterial color={"green"} />
-        </mesh>
-        <mesh position={[-0.5, -3, -1]}>
-          {/* <planeGeometry args={[2, 5]} /> */}
-          <shapeGeometry args={[planeShape]} />
-          <meshBasicMaterial color={"blue"} />
-        </mesh>
+            <Center>
+              <Dragon />
+            </Center>
+          </mesh>
+        </Float>
       </group>
     </>
   );
