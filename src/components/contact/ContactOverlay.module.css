@@ -23,8 +23,17 @@
   padding: 2rem;
   background-color: lightgrey;
   font-weight: 200;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  outline: 2px solid black;
 }
 
 .text-area {
   height: 30rem;
+  max-height: 30rem;
+
+  min-width: 100%;
+  max-width: 100%;
 }
