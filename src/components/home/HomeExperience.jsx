@@ -1,11 +1,7 @@
 import {
   Center,
   Float,
-  Mask,
-  MeshRefractionMaterial,
   MeshTransmissionMaterial,
-  TransformControls,
-  useMask,
   useScroll,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";

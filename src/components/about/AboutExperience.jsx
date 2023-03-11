@@ -3,14 +3,9 @@ import {
   Float,
   Mask,
   MeshTransmissionMaterial,
-  TransformControls,
   useMask,
-  useScroll,
 } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
 import { useControls } from "leva";
-import { useRef, useState } from "react";
-import { damp } from "three/src/math/MathUtils";
 import { RoundedPlaneShape } from "../../helpers/RoundPlaneShape";
 import { Bunny } from "../models/Bunny";
 import Dragon from "../models/Dragon";
