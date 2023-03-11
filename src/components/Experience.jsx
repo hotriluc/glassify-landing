@@ -1,9 +1,4 @@
-import {
-  OrthographicCamera,
-  PerspectiveCamera,
-  Scroll,
-  ScrollControls,
-} from "@react-three/drei";
+import { Environment, Scroll, ScrollControls } from "@react-three/drei";
 import React from "react";
 import AboutExperience from "./about/AboutExperience";
 import AboutOverlay from "./about/AboutOverlay";
@@ -17,6 +12,7 @@ const Experience = () => {
     <>
       <color args={["#101010"]} attach="background" />
       <ambientLight />
+      <Environment preset="city" />
 
       <ScrollControls pages={4} damping={0.3}>
         <Scroll>

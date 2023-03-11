@@ -11,7 +11,7 @@ const Background = (props) => {
 
   useFrame((state) => {
     const colorBlack = new THREE.Color("#101010");
-    const colorWhite = new THREE.Color("white");
+    const colorWhite = new THREE.Color("#F8F8FF");
 
     // material.current.color.lerp(
     //   scroll.offset > 0.3 ? colorBlack : colorWhite,
@@ -28,7 +28,7 @@ const Background = (props) => {
   return (
     <mesh scale={[viewport.width, viewport.height, 1]} {...props}>
       <planeGeometry />
-      <meshBasicMaterial ref={material} />
+      <meshBasicMaterial ref={material} color={"#F8F8FF"} />
     </mesh>
   );
 };
