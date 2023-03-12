@@ -12,7 +12,7 @@ function App() {
           <Experience />
         </Suspense>
       </Canvas>
-      {/* <Loader
+      <Loader
         barStyles={{
           width: "55vw",
         }}
@@ -24,7 +24,7 @@ function App() {
           fontFamily: '"Roboto Slab", serif',
           fontWeight: 200,
         }}
-      /> */}
+      />
     </>
   );
 }
