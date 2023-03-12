@@ -3,7 +3,7 @@ import classes from "./ContactOverlay.module.css";
 
 const ContactOverlay = () => {
   return (
-    <section className={classes.contact}>
+    <section className={classes.contact} onSubmit={(e) => e.preventDefault()}>
       <h2 className={classes.heading}>Contact Form.</h2>
 
       <form action="" className={classes.form}>

@@ -25,6 +25,12 @@
   padding: 2rem 4rem;
   font-size: 2rem;
   box-shadow: 0 1rem 3.5rem rgba(52, 51, 51, 0.3);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form button:active {
+  transform: scale(0.95) translateY(5%);
 }
 
 .input {
