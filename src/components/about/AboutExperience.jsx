@@ -5,7 +5,6 @@ import {
   MeshTransmissionMaterial,
   useMask,
 } from "@react-three/drei";
-import { useControls } from "leva";
 import { RoundedPlaneShape } from "../../helpers/RoundPlaneShape";
 import { transmissionConfig } from "../../helpers/TransmissionConfig";
 import { Bunny } from "../models/Bunny";
@@ -17,17 +16,10 @@ const smallPlaneShape = new RoundedPlaneShape(0, 0, 2, 2);
 const AboutExperience = () => {
   const stencil = useMask(1);
 
-  const { zFirst, zSecond, zThird, zForth } = useControls({
-    zFirst: { value: 0, min: -5, max: 5, step: 0.1 },
-    zSecond: { value: -1, min: -5, max: 5, step: 0.1 },
-    zThird: { value: 1, min: -5, max: 5, step: 0.1 },
-    zForth: { value: -0.3, min: -5, max: 5, step: 0.1 },
-  });
-
   return (
     <>
       <group position={[3, -10, 0]}>
-        <Mask colorWrite position={[0, 0, zFirst]} id={1}>
+        <Mask colorWrite position={[0, 0, 0]} id={1}>
           <shapeGeometry args={[planeShape]} />
           <meshBasicMaterial color={"#F8F8FF"} />
         </Mask>
@@ -35,7 +27,7 @@ const AboutExperience = () => {
             <boxGeometry args={[smallPlaneShape]} />
             <meshBasicMaterial color={"white"} />
           </Mask> */}
-        <Mask colorWrite position={[-2.3, 1, zThird]} id={1}>
+        <Mask colorWrite position={[-2.3, 1, 1]} id={1}>
           <shapeGeometry args={[smallPlaneShape]} />
           <meshBasicMaterial color={"#F8F8FF"} />
         </Mask>

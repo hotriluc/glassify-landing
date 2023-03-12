@@ -6,7 +6,7 @@ export function Bunny(props) {
   return (
     <group {...props} dispose={null}>
       <mesh castShadow receiveShadow geometry={nodes.bunny.geometry}>
-        <meshStandardMaterial color={"#101010"} />
+        <meshStandardMaterial color={props.color || "#101010"} />
       </mesh>
     </group>
   );

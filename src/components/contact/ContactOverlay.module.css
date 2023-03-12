@@ -9,11 +9,22 @@
 }
 
 .form {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   width: 45%;
   flex-direction: column;
   gap: 4rem;
+}
+
+.form button {
+  background-color: #101010;
+  color: #f8f8ff;
+  border: none;
+  border-radius: 1rem;
+
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  box-shadow: 0 1rem 3.5rem rgba(52, 51, 51, 0.3);
 }
 
 .input {
@@ -28,7 +39,7 @@
 }
 
 .input:focus {
-  outline: 2px solid white;
+  outline: 2px solid grey;
 }
 
 .text-area {
@@ -37,4 +48,9 @@
 
   min-width: 100%;
   max-width: 100%;
+}
+
+.copyright {
+  position: absolute;
+  right: 5rem;
 }

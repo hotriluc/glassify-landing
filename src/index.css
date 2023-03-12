@@ -13,7 +13,8 @@ html {
 }
 
 input,
-textarea {
+textarea,
+button {
   font-family: "Roboto Slab", serif;
   color: #f8f8ff;
 }

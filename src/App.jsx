@@ -12,7 +12,19 @@ function App() {
           <Experience />
         </Suspense>
       </Canvas>
-      <Loader />
+      {/* <Loader
+        barStyles={{
+          width: "55vw",
+        }}
+        innerStyles={{
+          width: "55vw",
+        }}
+        dataStyles={{
+          fontSize: "1.2rem",
+          fontFamily: '"Roboto Slab", serif',
+          fontWeight: 200,
+        }}
+      /> */}
     </>
   );
 }
