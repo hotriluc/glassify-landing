@@ -1,6 +1,6 @@
 .about {
   height: 200vh;
-  color: white;
+  color: #f8f8ff;
   padding-top: 20rem;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 .quote {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 35%;
   gap: 4rem;
 }
 
@@ -22,5 +22,6 @@
 .text {
   font-size: 2rem;
   font-weight: 200;
+  line-height: 1.7;
   /* width: 75%; */
 }

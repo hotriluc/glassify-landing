@@ -7,10 +7,10 @@ const AboutOverlay = () => {
       <div className={classes.quote}>
         <h2 className={classes.heading}>About.</h2>
         <p className={classes.text}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-          repudiandae fugiat, et ab, voluptatum amet consectetur sunt enim ad
-          ut, rem omnis reiciendis cumque necessitatibus soluta iusto aliquam
-          beatae voluptate!
+          We are the small company of crafters, who specializes in creating
+          glass made items.
+          <br /> We love our craft and always try our best to bring positive
+          experience to our customers.
         </p>
       </div>
 
@@ -19,10 +19,10 @@ const AboutOverlay = () => {
           Well designed <br />& crafted.
         </h2>
         <p className={classes.text}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-          repudiandae fugiat, et ab, voluptatum amet consectetur sunt enim ad
-          ut, rem omnis reiciendis cumque necessitatibus soluta iusto aliquam
-          beatae voluptate!
+          From designing to creating on each step we will be in touch with you.
+          <br />
+          To make sure that your eternal memories will last forever we use
+          high-quality and durable materials.
         </p>
       </div>
     </section>

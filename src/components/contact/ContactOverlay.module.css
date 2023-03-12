@@ -21,13 +21,14 @@
   border-radius: 1rem;
   font-size: 2.2rem;
   padding: 2rem;
-  background-color: lightgrey;
+  background-color: #101010;
   font-weight: 200;
   transition: all 0.3s;
+  box-shadow: 0 1rem 3.5rem rgba(52, 51, 51, 0.3);
 }
 
 .input:focus {
-  outline: 2px solid black;
+  outline: 2px solid white;
 }
 
 .text-area {

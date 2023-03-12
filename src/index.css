@@ -15,6 +15,7 @@ html {
 input,
 textarea {
   font-family: "Roboto Slab", serif;
+  color: #f8f8ff;
 }
 
 html,
@@ -27,7 +28,7 @@ body,
 }
 
 body {
-  background: #f0f0f0;
+  background: #f8f8ff;
 }
 
 section {

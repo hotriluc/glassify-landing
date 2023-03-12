@@ -7,12 +7,11 @@ const ContactOverlay = () => {
       <h2 className={classes.heading}>Contact</h2>
 
       <form action="" className={classes.form}>
-        <input className={classes.input} type="text" placeholder="Your name" />
-        <input className={classes.input} type="text" placeholder="Your email" />
+        <input className={classes.input} type="text" placeholder="Name" />
+        <input className={classes.input} type="text" placeholder="Email" />
         <textarea
           className={`${classes.input} ${classes["text-area"]}`}
-          contenteditable="true"
-          placeholder="Your message"
+          placeholder="Message"
         />
       </form>
     </section>
